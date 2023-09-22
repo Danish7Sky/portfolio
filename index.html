@@ -95,7 +95,6 @@
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-
     <div class="left-contact">
       <div class="in">
         <i class='bx bxl-windows'></i>
@@ -126,7 +125,7 @@
       <div class="row">
         <div class="contact-left">
           <h1>Contact Me</h1>
-          <p><i class='bx bx-mail-send'></i> danishup78@gmail.com</p>
+          <p class="email-para"><i class='bx bx-send'></i> danishup78@gmail.com</p>
 
           <div class="social-icons">
             <a href="https://facebook.com"><i class='bx bxl-facebook-circle'></i></a>
@@ -134,7 +133,7 @@
             <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
             <a href="https://linkedin.com"><i class='bx bxl-linkedin-square'></i></a>
           </div>
-          <a href="images/Mohammad Danish.pdf"><button class="btn2" type="button">Download CV</button></a>
+          <a href="images/Mohammad Danish.pdf"><button class="btn2" type="button">Resume</button></a>
 
         </div>
         <div class="contact-right">
@@ -159,22 +158,20 @@
 
   <script>
 
-const header = document.querySelector("header");
+    const header = document.querySelector("header");
 
-window.addEventListener ("scroll", function() {
-    header.classList.toggle ("sticky", window.scrollY > 200)
+    window.addEventListener("scroll", function () {
+      header.classList.toggle("sticky", window.scrollY > 200)
 
-});
+    });
 
-    
-let menu = document.querySelector('#menu-icon');
-let navlist= document.querySelector('.navlist');
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.navlist');
 
-menu.onclick = () => {
-  menu.classList.toggle('bx-x');
-  navlist.classList.toggle('open');
-}
-
+    menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navlist.classList.toggle('open');
+    }
   </script>
 
   <script>
