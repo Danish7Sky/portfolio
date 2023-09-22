@@ -149,6 +149,7 @@ section {
     background: transparent;
     border: 2px solid var(--main-color);
 }
+
 .btnn {
     display: inline-block;
     padding: 16px 45px;
@@ -160,6 +161,7 @@ section {
     transition: all ease .50s;
     margin-left: 1px;
 }
+
 .btnn:hover {
     transform: translateX(5px);
     background: transparent;
@@ -248,7 +250,6 @@ span {
 
 .service-box {
     padding: 45px 30px;
-    /* background: var(--bg-color); */
     border-radius: 0.8rem;
     border: 1px solid transparent;
     cursor: pointer;
@@ -382,15 +383,11 @@ span {
 /* contact */
 
 .contact-left {
-    flex-basis: 35%;
-    margin-left: 20%;
-    margin-top: 20px;
-    word-spacing: 1px;
+   margin-top: 40px;
     line-height: 70px;
 }
 
 .contact-right {
-    flex-basis: 60%;
     margin-left: 50%;
     margin-top: -300px;
 }
@@ -398,26 +395,28 @@ span {
 .contact-left h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
-    font-weight: 1000;
-    word-spacing: 10px;
-    letter-spacing: 5px;
+    font-weight: 990;
+    word-spacing: 9px;
+    letter-spacing: 4px;
+    margin-left: 260px;
 }
 
-.contact-left p {
+.email-para{
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
-    font-weight: 400;
-    margin-top: 20px;
-
+    margin-left: 260px;
+    font-weight: 100;
+    margin-top: 18px;
 }
 
-.contact-left p i {
+.email-para i {
     color: var(--main-color);
-    font-size: 40px;
-}
+    font-size: 30px;
+} 
 
 .social-icons {
     margin-top: 0px;
+    margin-left: 260px;
 }
 
 .social-icons a {
@@ -430,6 +429,7 @@ span {
 }
 
 .social-icons a:hover {
+   
     transform: translateY(-5px);
     background: transparent;
 
@@ -438,14 +438,15 @@ span {
 .social-icons i {
     height: 40px;
     width: 40px;
-
     color: var(--text-color);
-    border: 2px solid var(--main-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    border-radius: 50%;
+    font-size: 30px;
+
+}
+button.btn2 {
+    margin-left: 260px;
 }
 
 .btn2 {
@@ -459,8 +460,10 @@ span {
     margin-top: 10px;
     font-size: 19px;
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.5s;  
+
 }
+
 
 .btn2:hover {
     transform: translateX(4px);
@@ -523,11 +526,12 @@ form textarea {
     margin-left: 15px;
     display: block;
 }
-.scroll-bttn{
+
+.scroll-bttn {
     position: fixed;
     right: 2.2rem;
     bottom: 2.2rem;
-    color:var(--text-color);
+    color: var(--text-color);
     background: var(--main-color);
     font-size: 22px;
     padding: 6px;
@@ -558,7 +562,8 @@ form textarea {
     section {
         padding: 100px 5% 80px;
     }
-    .side2 img{
+
+    .side2 img {
         width: 72%;
         height: auto;
     }
@@ -612,15 +617,16 @@ form textarea {
     }
 
     .contact-left h1 {
-        margin-left: -90px;
+        margin-left: 230px;
     }
-
-    .contact-left p i {
-        margin-left: -92px;
+    .email-para {
+        margin-left: 230px;
     }
-
     .social-icons {
-        margin-left: -90px;
+        margin-left: 230px;
+    }
+    button.btn2 {
+        margin-left: 230px;
     }
 
     .btn2 {
@@ -665,7 +671,7 @@ form textarea {
     }
 
     .about-img img {
-        max-width: 100%;
+        max-width: 80%;
         width: 600px;
         height: auto;
     }
@@ -683,11 +689,23 @@ form textarea {
         margin: auto;
 
     }
+    .contact-left h1 {
+        margin-left: 150px;
+    }
+    .email-para {
+        margin-left: 150px;
+    }
+    .social-icons {
+        margin-left: 150px;
+    }
+    button.btn2 {
+        margin-left: 150px;
+    }
 }
 
 /* 5 */
 
-@media(max-width:870px) {
+@media (max-width:870px) {
     #menu-icon {
         display: block;
     }
@@ -703,6 +721,16 @@ form textarea {
         padding: 20px 0;
         text-align: left;
         transition: all 0.50s ease;
+    }
+
+    .navlist a {
+        display: block;
+        font-size: 22px;
+        padding: 12px 0;
+    }
+
+    .navlist.open {
+        top: 100%;
     }
 
     .side2 img {
@@ -731,22 +759,12 @@ form textarea {
     }
 
     .btn {
-            margin-left: 12%;
-       
-    }
-    .btnn{
-        margin-left: 41%;
-    }
-
-    .navlist a {
-        display: block;
-        font-size: 22px;
-        padding: 12px 0;
+        margin-left: 60px;
 
     }
 
-    .navlist.open {
-        top: 100%;
+    .btnn {
+        margin-left: 30%;
     }
 
     .about-text h2,
@@ -781,15 +799,16 @@ form textarea {
     }
 
     .contact-left h1 {
-        margin-left: -100px;
+        margin-left: 90px;
     }
-
-    .contact-left p i {
-        margin-left: -650px;
+    .email-para {
+        margin-left: -309px;
     }
-
-    .contact-left p {
-        margin-left: 76px;
+    .social-icons {
+        margin-left: 90px;
+    }
+    button.btn2 {
+        margin-left: 90px;
     }
 
     .contact-right form {
@@ -797,20 +816,17 @@ form textarea {
         margin-left: 50px;
     }
 
-    .social-icons {
+    /* .social-icons {
         margin-left: -97px;
-    }
+    } */
+}
 
-    .btn2 {
-        margin-left: -95px;
-    }
+/* .btn2 {
+        margin-left: 50px;
+    } */
 
-    .contact-right form {
-        width: 75%;
-    }
-
-
-
+.contact-right form {
+    width: 75%;
 }
 
 
@@ -818,17 +834,17 @@ form textarea {
 
 @media(max-width:660px) {
     .home {
-        min-height: 80vh;
+        min-height: 70vh;
     }
 
     :root {
         --h1-font: 3.8rem;
         --h2-font: 2.7rem;
-        --p-font: 15px;
+
     }
 
     .hero-text h1 {
-        font-size: 50px;
+        font-size: 40px;
         letter-spacing: 3px;
         font-weight: 900;
     }
@@ -840,20 +856,9 @@ form textarea {
     }
 
     .side2 img {
-        width: 100%;
+        width: 94%;
         height: auto;
-        margin-left: 2px;
-    }
-
-    .contact-left p {
-        margin-left: 300px;
-
-    }
-
-    .contact-left h1 {
-        font-size: 40px;
-        letter-spacing: 0;
-        margin-left: -40px;
+        margin-left: 1px;
     }
 
     .btn {
@@ -871,15 +876,38 @@ form textarea {
     .in h4 {
         font-size: 20px;
     }
-
+    .contact-left h1 {
+        margin-left: 70px;
+        font-size: 35px;
+        letter-spacing: 0;
+    }
+    .email-para {
+        margin-left: -340px;
+        font-size: 15px;
+    }
     .social-icons {
-        margin-left: -40px;
+        margin-left: 70px;
+        font-size: 0;
+        word-spacing: 0;
+    }
+    .social-icons i{
+        font-size: 30px;
+        word-spacing: -4px;
+    }
+    .email-para i {
+        font-size: 15px;
+    }
+    button.btn2 {
+        margin-left: 70px;
+
+
+    }
+    /* .btn2 {
+        margin-left: -38px;
+    } */
+    
     }
 
-    .btn2 {
-        margin-left: -38px;
-    }
-}
 
 
 /* 7 */
@@ -906,5 +934,145 @@ form textarea {
 
     .hero-text h4 {
         margin-left: 60px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .side2 img {
+        margin-right: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        margin-top: -100px;
+    }
+
+    .hero-text h3 {
+        font-size: 24px;
+        margin-bottom: 40%;
+    }
+
+    .about-img img {
+        max-width: 80%;
+        width: 600px;
+        height: auto;
+    }
+
+    .left-contact {
+        gap: 2rem;
+    }
+    .contact-left h1 {
+        margin-left: 40px;
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+    .email-para {
+        margin-left:-199px;
+        font-size: 10px;
+        margin-top: -15px;
+    }
+   .social-icons {
+        margin-left: 47px;
+        margin-top: -26px;
+    }
+   
+    .social-icons i{
+      width: 18px;
+        word-spacing: -4px;
+        font-size: 22px;
+        /* margin-top: 12px; */
+    }
+    .email-para i {
+        font-size: 15px;
+    }
+   button.btn2 {
+        margin-left: 46px;
+        /* max-width: 80px; */
+    }
+    .contact-right form {
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        background: #2c2c2c;
+        font-weight: 200;
+        margin-top: 20px;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+    .right p {
+        font-size: 15px;
+    }
+    .right h1 {
+        font-family: 'Dosis', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        margin-top: -200px;
+    }
+    .left-contact {
+        gap: 1.1rem;
+    }
+    .in i {
+        font-size: 65px;
+    }
+    .in h4 {
+        font-size: 15px;
+    }
+    .text-center h2 {
+        font-size: 45px;
+    }
+    .text-center h4 {
+        font-size: 15px;
+    }
+    .service i {
+        font-size: 60px;
+    }
+    .service h3 {
+        font-size: 25px;
+    }
+    .service p {
+        font-size: 14px;
+    }
+    .service-box {
+        height: 350px;
+        margin: auto;
+        display: block;
+        width: 290px;
+    }
+    .about-text h2 {
+        font-size: 45px;
+    }
+    .about-text h5 {
+        font-size: 18px;
+    }
+    .about-text p {
+        font-size: 15px;
+    }
+    .scroll-bttn {
+        position: fixed;
+        right: 0.2rem;
+        bottom: 0.2rem;
+        font-size: 15px;
+        padding: 4px;
+           
+    }
+    button.btn2 {
+        width: 118px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .btn3 {
+        font-size: 16px;
+        padding: 0px 10px;
+        height: 30px;
+        margin-top: 1px;
     }
 }
