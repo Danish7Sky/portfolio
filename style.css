@@ -1076,4 +1076,8 @@ form textarea {
         height: 30px;
         margin-top: 1px;
     }
+    .logo img {
+    width: 40%;
+    height: auto;
+}
 }
