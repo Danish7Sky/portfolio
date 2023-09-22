@@ -969,11 +969,12 @@ form textarea {
         font-size: 25px;
         letter-spacing: 0;
     }
+   
     .email-para {
-        margin-left:-199px;
-        font-size: 10px;
-        margin-top: -15px;
-    }
+    margin-left: -183px;
+    font-size: 13px;
+    margin-top: -15px;
+}
    .social-icons {
         margin-left: 47px;
         margin-top: -26px;
