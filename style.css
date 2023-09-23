@@ -1094,4 +1094,8 @@ form textarea {
         padding:10px 35px;
         border-radius: 5px;
     }
+     #msg{
+        font-size: 8px;
+        margin-left: 20px;
+    }
 }
