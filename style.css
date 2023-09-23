@@ -948,15 +948,20 @@ form textarea {
         min-height: 85vh;
     }
     .hero-text h1 {
-        font-size: 35px;
+        font-size: 36px;
         margin-top: -95px;
+        letter-spacing: 0;
+    }
+    .hero-text h4 {
+        font-size: 13px;
+        word-spacing: -1px;
     }
 
     .hero-text h3 {
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 40%;
+        word-spacing: 2px;
     }
-
     .about-img img {
         max-width: 80%;
         width: 600px;
