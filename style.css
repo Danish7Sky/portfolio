@@ -941,10 +941,12 @@ form textarea {
 @media (max-width:400px) {
     .side2 img {
         margin-right: 10px;
-        width: 110%;
+        width: 105%;
         height: auto;
     }
-
+    .home {
+        min-height: 93vh;
+    }
     .hero-text h1 {
         font-size: 35px;
         margin-top: -95px;
@@ -1009,13 +1011,16 @@ form textarea {
         font-size: 12px;
     }
     .right p {
+        font-family: 'Dosis', sans-serif;
         font-size: 15px;
+        color: var(--other-color);
     }
     .right h1 {
         font-family: 'Dosis', sans-serif;
         font-size: 50px;
         text-align: center;
         margin-top: -200px;
+        
     }
     .left-contact {
         gap: 1.1rem;
@@ -1058,8 +1063,8 @@ form textarea {
     }
     .scroll-bttn {
         position: fixed;
-        right: 0.2rem;
-        bottom: 0.2rem;
+        right: 1.2rem;
+        bottom: 1.2rem;
         font-size: 15px;
         padding: 4px;
            
