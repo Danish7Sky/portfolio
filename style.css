@@ -943,9 +943,13 @@ form textarea {
         margin-right: 10px;
         width: 105%;
         height: auto;
+        margin-top: -30%;
     }
     .home {
         min-height: 85vh;
+    }
+     .hero-text{
+        margin-top: -5%;
     }
     .hero-text h1 {
         font-size: 36px;
