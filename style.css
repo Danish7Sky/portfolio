@@ -941,31 +941,38 @@ form textarea {
 
 @media (max-width:400px) {
     .side2 img {
-        margin-right: 10px;
+        /* margin-right: 10px; */
         width: 105%;
         height: auto;
-        margin-top: -30%;
+        /* margin-top: -30%; */
+        margin: 7px 88px 5px;
     }
     .home {
         min-height: 85vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
-     .hero-text{
+    .hero-text{
         margin-top: -5%;
+        order: 2;
+        width: 100%;
     }
     .hero-text h1 {
-        font-size: 36px;
+        font-size: 50px;
         margin-top: -95px;
-        letter-spacing: 0;
+        letter-spacing: 2px;
+        font-weight: 800;
     }
     .hero-text h4 {
-        font-size: 13px;
+        font-size: 17px;
         word-spacing: -1px;
     }
 
     .hero-text h3 {
         font-size: 22px;
-        margin-bottom: 40%;
-        word-spacing: 2px;
+        margin-bottom: 30%;
+    word-spacing: 5px;
     }
     .about-img img {
         max-width: 80%;
