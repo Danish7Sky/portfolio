@@ -941,11 +941,9 @@ form textarea {
 
 @media (max-width:400px) {
     .side2 img {
-        /* margin-right: 10px; */
         width: 93%;
         height: auto;
-        /* margin-top: -30%; */
-        margin: 7px 88px 5px;
+        margin: 20px 88px 5px;
     }
     .home {
         min-height: 85vh;
