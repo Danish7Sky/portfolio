@@ -334,6 +334,7 @@ span {
     font-size: 27px;
     font-weight: 600;
     letter-spacing: 1px;
+     color: var(--other-color);
 
 }
 
