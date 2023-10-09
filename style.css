@@ -1110,10 +1110,11 @@ form textarea {
            
     }
     button.btn2 {
-        width: 118px;
-        height: 35px;
-        font-size: 16px;
-    }
+         width: 100px;
+            height: 40px;
+            font-size: 15px;
+            padding: 0px
+          }
     .btn3 {
         font-size: 16px;
         padding: 0px 10px;
