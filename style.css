@@ -75,6 +75,31 @@ header {
     display: none;
 }
 
+/* new code for project dropdown menu */
+ul li ul.dropdown li{
+    display: block;
+    max-width: 199px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding:10px;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    display: none;
+    padding: 10px;
+}
+ul li a:hover{
+    color: var(--main-color);
+    
+}
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+/* end of project menu */
+
+
+
 section {
     padding: 120px 19% 100px;
 }
