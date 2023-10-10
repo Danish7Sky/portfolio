@@ -30,7 +30,6 @@ body {
     background: var(--bg-color);
 }
 
-
 /* navbar */
 
 header{
@@ -92,6 +91,7 @@ header label{
     display: none;
 }
 /* end */
+
 
 section {
     padding: 120px 19% 100px;
@@ -352,7 +352,7 @@ span {
     font-size: 27px;
     font-weight: 600;
     letter-spacing: 1px;
-     color: var(--other-color);
+    color: var(--other-color);
 
 }
 
@@ -402,7 +402,7 @@ span {
 /* contact */
 
 .contact-left {
-   margin-top: 40px;
+    margin-top: 40px;
     line-height: 70px;
 }
 
@@ -420,7 +420,7 @@ span {
     margin-left: 260px;
 }
 
-.email-para{
+.email-para {
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     margin-left: 260px;
@@ -431,7 +431,7 @@ span {
 .email-para i {
     color: var(--main-color);
     font-size: 30px;
-} 
+}
 
 .social-icons {
     margin-top: 0px;
@@ -448,7 +448,7 @@ span {
 }
 
 .social-icons a:hover {
-   
+
     transform: translateY(-5px);
     background: transparent;
 
@@ -464,6 +464,7 @@ span {
     font-size: 30px;
 
 }
+
 button.btn2 {
     margin-left: 260px;
 }
@@ -479,7 +480,7 @@ button.btn2 {
     margin-top: 10px;
     font-size: 19px;
     cursor: pointer;
-    transition: transform 0.5s;  
+    transition: transform 0.5s;
 
 }
 
@@ -567,6 +568,70 @@ form textarea {
 
 
 
+
+@media(max-width:991px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li a{
+        padding: 10px;
+        font-size: 20px;
+        color: #000;
+    }
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+@media(max-width:400px){
+    header{
+        padding: 10px;
+    }
+    header .logo{
+        width: 30%;
+        height: auto;
+    }
+    header label {
+        font-size: 20px;
+    }
+
+    header .navbar ul li a{
+        padding: 5px;
+        font-size: 15px;
+        color: #000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* 1 */
 
 @media(max-width:1200px) {
@@ -638,12 +703,15 @@ form textarea {
     .contact-left h1 {
         margin-left: 230px;
     }
+
     .email-para {
         margin-left: 230px;
     }
+
     .social-icons {
         margin-left: 230px;
     }
+
     button.btn2 {
         margin-left: 230px;
     }
@@ -708,15 +776,19 @@ form textarea {
         margin: auto;
 
     }
+
     .contact-left h1 {
         margin-left: 150px;
     }
+
     .email-para {
         margin-left: 150px;
     }
+
     .social-icons {
         margin-left: 150px;
     }
+
     button.btn2 {
         margin-left: 150px;
     }
@@ -820,12 +892,15 @@ form textarea {
     .contact-left h1 {
         margin-left: 90px;
     }
+
     .email-para {
         margin-left: -309px;
     }
+
     .social-icons {
         margin-left: 90px;
     }
+
     button.btn2 {
         margin-left: 90px;
     }
@@ -835,14 +910,10 @@ form textarea {
         margin-left: 50px;
     }
 
-    /* .social-icons {
-        margin-left: -97px;
-    } */
+  
 }
 
-/* .btn2 {
-        margin-left: 50px;
-    } */
+
 
 .contact-right form {
     width: 75%;
@@ -853,7 +924,7 @@ form textarea {
 
 @media(max-width:660px) {
     .home {
-        min-height: 70vh;
+        min-height: 100vh;
     }
 
     :root {
@@ -895,37 +966,42 @@ form textarea {
     .in h4 {
         font-size: 20px;
     }
+
     .contact-left h1 {
         margin-left: 70px;
         font-size: 35px;
         letter-spacing: 0;
     }
+
     .email-para {
         margin-left: -340px;
         font-size: 15px;
     }
+
     .social-icons {
         margin-left: 70px;
         font-size: 0;
         word-spacing: 0;
     }
-    .social-icons i{
+
+    .social-icons i {
         font-size: 30px;
         word-spacing: -4px;
     }
+
     .email-para i {
         font-size: 15px;
     }
+
     button.btn2 {
         margin-left: 70px;
 
 
     }
-    /* .btn2 {
-        margin-left: -38px;
-    } */
+
     
-    }
+
+}
 
 
 
@@ -959,27 +1035,32 @@ form textarea {
 
 @media (max-width:400px) {
     .side2 img {
-        width: 93%;
+
+        width: 94%;
         height: auto;
         margin: 20px 88px 5px;
     }
+
     .home {
         min-height: 85vh;
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
     }
-    .hero-text{
+
+    .hero-text {
         margin-top: -5%;
         order: 2;
         width: 100%;
     }
+
     .hero-text h1 {
         font-size: 50px;
         margin-top: -95px;
         letter-spacing: 2px;
         font-weight: 800;
     }
+
     .hero-text h4 {
         font-size: 17px;
         word-spacing: -1px;
@@ -988,8 +1069,9 @@ form textarea {
     .hero-text h3 {
         font-size: 22px;
         margin-bottom: 30%;
-    word-spacing: 5px;
+        word-spacing: 5px;
     }
+
     .about-img img {
         max-width: 80%;
         width: 600px;
@@ -999,39 +1081,46 @@ form textarea {
     .left-contact {
         gap: 2rem;
     }
+
     .contact-left h1 {
         margin-left: 40px;
         font-size: 25px;
         letter-spacing: 0;
     }
+
     .email-para {
-        margin-left:-162px;
+        margin-left: -162px;
         font-size: 10px;
         margin-top: -15px;
     }
-   .social-icons {
+
+    .social-icons {
         margin-left: 44px;
         margin-top: -26px;
     }
-   
-    .social-icons i{
-      width: 18px;
+
+    .social-icons i {
+        width: 18px;
         word-spacing: -4px;
         font-size: 22px;
         /* margin-top: 12px; */
     }
+
     .email-para i {
         font-size: 15px;
     }
-   button.btn2 {
+
+    button.btn2 {
         margin-left: 46px;
         /* max-width: 80px; */
     }
+
     .contact-right form {
         width: 90%;
         margin-left: 10px;
         margin-top: 50px;
     }
+
     .copyright {
         width: 100%;
         text-align: center;
@@ -1040,99 +1129,133 @@ form textarea {
         font-weight: 200;
         margin-top: 20px;
     }
-    .copyright p{
+
+    .copyright p {
         font-size: 12px;
     }
+
     .right p {
         font-family: 'Dosis', sans-serif;
         font-size: 15px;
         color: var(--other-color);
     }
+
     .right h1 {
         font-family: 'Dosis', sans-serif;
         font-size: 50px;
         text-align: center;
         margin-top: -200px;
-        
+
     }
+
     .left-contact {
         gap: 1.1rem;
     }
+
     .in i {
         font-size: 65px;
     }
+
     .in h4 {
         font-size: 15px;
     }
+
     .text-center h2 {
         font-size: 45px;
     }
+
     .text-center h4 {
         font-size: 15px;
     }
+
     .service i {
         font-size: 60px;
     }
+
     .service h3 {
         font-size: 25px;
     }
+
     .service p {
         font-size: 14px;
     }
+
     .service-box {
         height: 350px;
         margin: auto;
         display: block;
         width: 290px;
     }
+
     .about-text h2 {
         font-size: 45px;
     }
+
     .about-text h5 {
         font-size: 18px;
     }
+
     .about-text p {
         font-size: 15px;
     }
+
     .scroll-bttn {
         position: fixed;
         right: 1.2rem;
         bottom: 1.2rem;
         font-size: 15px;
         padding: 4px;
-           
+
     }
+
     button.btn2 {
-         width: 100px;
-            height: 40px;
-            font-size: 15px;
-            padding: 0px
-          }
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        padding: 0px
+    }
+
     .btn3 {
         font-size: 16px;
         padding: 0px 10px;
         height: 30px;
         margin-top: 1px;
     }
+
     .logo img {
         width: 40%;
         height: auto;
     }
+
     .btn {
         padding: 10px 19px;
         height: 45px;
         border-radius: 5px;
         font-size: 15px;
     }
-    .btnn{
-        padding:10px 35px;
+
+    .btnn {
+        padding: 10px 35px;
         border-radius: 5px;
     }
-     #msg{
+
+    #msg {
         font-size: 8px;
         margin-left: 20px;
     }
+
     #menu-icon {
-    font-size: 32px;
+        font-size: 32px;
+    }
 }
+
+/* new */
+
+@media (max-width: 400px) {
+    .navlist.open {
+        top: 80%;
+        opacity: 0.8;
+    }
+
 }
+
