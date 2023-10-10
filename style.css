@@ -30,75 +30,68 @@ body {
     background: var(--bg-color);
 }
 
-header {
+
+/* navbar */
+
+header{
     position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
+    top: 0; left: 0; right: 0;
+    background: transparent;
+    padding: 10px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 18px 9%;
-    border-bottom: 1px solid transparent;
-    transition: all ease 0.50s;
-}
-
-.logo img {
-    width: 42%;
+    z-index: 1000;
+   }
+header .logo{
+    width: 18%;
     height: auto;
 }
 
-.navlist {
-    display: flex;
+header .navbar ul{
+    list-style: none;
 }
 
-.navlist a {
-    color: var(--second-color);
-    font-size: var(--p-font);
-    font-weight: 600;
-    margin: 0 28px;
-    transition: all ease 0.40s;
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+header .navbar ul li a:hover{
+    transition: 0.4s;
+    color: #e9204f;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #041C32;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1 px solid rgb(0, 0, 0, 0.1);
+}
+header .navbar ul li:hover > ul{
+    display: initial;
 }
 
-.navlist a:hover {
-    color: var(--main-color);
 
+#menu-bar{
+    display: none;
 }
-
-#menu-icon {
-    font-size: 42px;
-    color: var(--text-color);
-    z-index: 10001;
+header label{
+    font-size: 20px;
+    color: #fff;
     cursor: pointer;
     display: none;
 }
-
-/* new code for project dropdown menu */
-ul li ul.dropdown li{
-    display: block;
-    max-width: 199px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding:10px;
-}
-ul li ul.dropdown{
-    width: 100%;
-    position: absolute;
-    display: none;
-    padding: 10px;
-}
-ul li a:hover{
-    color: var(--main-color);
-    
-}
-ul li:hover ul.dropdown{
-    display: block;
-
-}
-/* end of project menu */
-
-
+/* end */
 
 section {
     padding: 120px 19% 100px;
