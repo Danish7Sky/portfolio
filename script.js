@@ -18,7 +18,7 @@ menu.onclick = () => {
 
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyVEhndaEazUhE1bV5RZNdhMJLA4eUStXbt8SFFjypoYbs1RSvZBpIAGdByoZ0zaMCrGQ/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxKG2b2aWlJeYv4H6UPtaFe__o6k9-BiR7H8W3Y03WmbJ9UppDolLzKskoDA7U9DhIBfA/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 form.addEventListener('submit', e => {
